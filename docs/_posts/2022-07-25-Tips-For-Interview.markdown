@@ -6,7 +6,9 @@ categories: interview tips
 ---
 `Question 1 : What is your strenghts?`
 {% highlight ruby %}
-I am fast learner and I can manage to work under tide deadline. In my opinion, technology is just a tool to achieve the business problem.
+I am fast learner and I can manage to work under tide deadline. 
+In my opinion, technology is just a tool to achieve the business problem.
+I'm socialbe person and team player. 
 {% endhighlight %}
 
 `Question 2 : What is your weaknesses?`
