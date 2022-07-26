@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tips for Interview!"
-date:   2022-07-26 18:28:34 +0800
+date:   2022-07-25 18:28:34 +0800
 categories: interview tips
 ---
 `Question 1 : What is your strenghts?`
