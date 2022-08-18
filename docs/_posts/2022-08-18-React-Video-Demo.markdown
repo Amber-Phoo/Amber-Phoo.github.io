@@ -5,64 +5,137 @@ date:   2022-08-18 18:28:34 +0800
 categories: video demo
 ---
 
-## React App features
+## React Code Demo
 
+<h2>Code Structure</h2>
+<h3>This React application is created using create-react-app command.</h3>
+<p>At the high level below is the structure of the React app.</p>
 
-### General
-1. Register for new account
-2. Login to app
+![image](https://user-images.githubusercontent.com/100519215/185398745-cc01f90e-f88c-4cc9-8efb-c07b68b068b0.png)
 
-### Study Groups / Chats
+<ul>
+  <li><h3>api</h3></li>
+  <p>This directory will have all methods which make calls to an API.</p>
+  
+  ![image](https://user-images.githubusercontent.com/100519215/185402500-df7ce799-2b05-4eac-bb4f-af73299e3934.png)
 
-1. Study groups with chatting.
-2. Able to send images/videos/files.
-3. Able to view images/play videos in full screen by tapping on them from the chat screen.
-4. Able to download files sent
-5. Search for users to chat 1 to 1
-6. Both light mode and dark mode available
-7. Mobile responsive for small device
-8. Autoscroll to last message when click on each chat list.
-9. Display message send time based on current timestamp.
+  
+  <li><h3>components</h3></li>
+  <p>This directory consists all react UI components.</p>
+  
+  ![image](https://user-images.githubusercontent.com/100519215/185402686-31484ee5-63ae-4eaf-8b4b-64d046248c29.png)
 
-### Events
-1. View all available events with Calendar View
-2. Join events or View Discussion (already member of group) by clicking each event
-3. Create new events based on Date and Time
-4. Have Agenda View.
+  
+  <li><h3>providers</h3></li>
+  <p>This directory contains all context API providers for react app.</p>
+  
+  ![image](https://user-images.githubusercontent.com/100519215/185402784-60096885-675c-4165-8a4f-842d0b4c1fd8.png)
 
-### Books
-1. View books recommended based on interests & groups joined
-2. Search for books with autocomplete feature
-3. View books
+  
+  <li><h3>reducers</h3></li>
+  <p>This directory has all reducers which help manages state via actions.</p>
+  
+  ![image](https://user-images.githubusercontent.com/100519215/185402840-c479dc7f-c99a-4614-992f-0d5b175e1872.png)
 
-### Profile
-1. View current profile
-2. Change profile photo by clicking upload photo (Drag and Drop supported)
-3. Edit interests, email, display name
-4. Change password
-5. Logout
+   <li><h3>routers</h3></li>
+  <p>This directory contains client site routing configuration file.</p>
+  
+  ![image](https://user-images.githubusercontent.com/100519215/185403033-bb5bd00c-ef10-4cfa-8e5a-60c13dedb2ea.png)
+  
+  <li><h3>styles</h3></li>
+  <p>This directory has all styles components such as 'css' and 'sass'.</p>
+  
+   ![image](https://user-images.githubusercontent.com/100519215/185402932-5077813c-f392-4abb-8666-16dc80dd5cd9.png)
+  
+   <li><h3>utils</h3></li>
+   <p>This directory contains utility function such as store and retrieve session. Last but not least AppSetting to easily configure api endpoint.</p>
 
+  ![image](https://user-images.githubusercontent.com/100519215/185403637-f6022141-b703-4c6d-a547-814707c6d244.png)
 
-### Technical Challenges
-
-#### React Hook
-1. React hook is a bit tricky. If you don't handle api request properly using hook effect, you will get memory heat problem.
-2. React hook is newly introduced feature, it takes a bit of time to understand and use it.
-
-#### Client Site Routing
-1. react-router-dom V6 is used for client site routing. take a bit of time to know how to use the library.
-
-#### CORS issue
-1. This issue always happen when server and client site are not in the same domain. So, server reject every request from client because of cors issue.
-2. Able to solve by setting up Cors compitablity setting in backend code.
-
-#### Styling issue
-1. In order to support multi mode in chat style, style was created using sass instead of css. By using sass, eliminateed lots of duplicate code.
-
-#### HTTPS issue
-1. In order to send data over the internet, browser compains unless it is being sent over a HTTPS tunnel. So react is running behind a Nginx reverse proxy providing HTTPS support.
-2. If react is running with HTTPS, it cant send data to JAVA backend as it was running without HTTPS. So now all the servers are behind Nginx reverse proxies.
+  
+  <li><h3>_mock</h3></li>
+  <p>This directory contains mock data structure of App Model to make app work before actual data is passing down from api.</p>
+</ul>
+  
 
 <p>&nbsp;</p>
 
 <p>&nbsp;</p>
+
+
+<h2>Code Overview</h2>
+
+<ul>
+  <li><h3>Index.js</h3></li>
+  <p>This file is main entry point of React app and which has child component called AppRouter.js</p>
+  
+  ![image](https://user-images.githubusercontent.com/100519215/185407241-072af988-529f-4be7-904d-da8f550ee22a.png)
+  
+  <li><h3>AppRouter.js</h3></li>
+  <p>The route of the application is configure in this file.</p>
+  
+  ![image](https://user-images.githubusercontent.com/100519215/185408254-bc260fe8-46b3-4b00-95f4-603488f40ce2.png)
+  
+  <p>Authentication logic is implemented in this code.</p>
+  
+  ![image](https://user-images.githubusercontent.com/100519215/185408355-be5416cd-68e0-440d-b606-33dce928654d.png)
+
+  <li><h3>eventReducer.js</h3></li>
+  <p>Each UI component has their own state. Those states are declare in the respective reducer file. eventReducer is one of them which is used to manage states of event component.</p>
+  
+  ![image](https://user-images.githubusercontent.com/100519215/185410590-46ffc357-79cd-47b6-87bf-49dfb1f91c31.png)
+
+  <li><h3>EventHome.js (Parent Component)</h3></li>
+  <p>1. EventHome is UI component for event. States of this UI component are initialized using userReducer hook.</p>
+  
+  ![image](https://user-images.githubusercontent.com/100519215/185412197-7c6c346f-d23d-47e0-9a19-13e92a7bb1d4.png)
+  
+  <p>2. <b>useEffect<b> hook will be triggered before component mounted and after component dismounted.<p>
+  <p>That is the reason we put restful api call in this method.</p>
+    
+  ![image](https://user-images.githubusercontent.com/100519215/185413535-7d86b1ae-e664-4fdf-8a5c-2d098eb11c0a.png)
+
+  <p>3. Then we use Provider to pass down parent state to child components. So that parent and child component can use same state.</p>
+
+  ![image](https://user-images.githubusercontent.com/100519215/185413034-ea30df89-71a7-480d-aeec-79e9817578df.png)
+    
+  <li><h3>MyCalendar.js (Child Component)</h3></li>
+  <p>1. Child component retrieve parent's state by using <b>useContext</b> hook.</p> 
+    
+  ![image](https://user-images.githubusercontent.com/100519215/185418359-2893085b-1f84-4762-8100-e4e2a662e867.png)
+
+  <p>2. As long as eventContext has eventList state, then child component will render.</p> 
+    
+  ![image](https://user-images.githubusercontent.com/100519215/185419001-321b7312-486b-4b3a-b63e-0fb3fee1adf9.png)
+  
+  <li><h3>event-actions.js (Event Restful Service handler)</h3></li>
+  <p>All the event related restful services are implemented in here using axios library.</p> 
+    
+  ![image](https://user-images.githubusercontent.com/100519215/185419978-1f47cb4b-046c-485c-b2f1-9851556ceaf5.png)
+
+</ul>
+
+
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+ 
+## Libary Used in this project 
+  
+<h2><a href="https://axios-http.com/docs/intro" target="_blank">axios</a></h2>
+<p>This library is used to call restful api service.</p>
+
+<h2><a href="https://reactrouter.com/docs/en/v6/getting-started/overview" target="_blank">react router</a></h2>
+<p>This library is used to make client site routing possible.</p>
+  
+<h2><a href="https://mui.com/" target="_blank">MUI</a></h2>
+<p>This library is used as based UI library. It helps a lot in creating nice looking UI.</p>
+
+<h2><a href="https://github.com/jquense/react-big-calendar" target="_blank">React Big Calendar</a></h2>
+<p>This library is used to creaet Calendar View with event.</p>
+
+#### Special thanks to above libaries for making this react application happen.
+  
+  
+  
