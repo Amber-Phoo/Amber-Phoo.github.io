@@ -14,22 +14,22 @@ categories: video demo
 ![image](https://user-images.githubusercontent.com/100519215/185398745-cc01f90e-f88c-4cc9-8efb-c07b68b068b0.png)
 
 
-  ## - api
-  <p>This directory will have all methods which make calls to an API.</p>
-  
-  ![image](https://user-images.githubusercontent.com/100519215/185402500-df7ce799-2b05-4eac-bb4f-af73299e3934.png)
+## api
+<p>This directory will have all methods which make calls to an API.</p>
+
+![image](https://user-images.githubusercontent.com/100519215/185402500-df7ce799-2b05-4eac-bb4f-af73299e3934.png)
 
   
-  ## components
-  <p>This directory consists all react UI components.</p>
-  
-  ![image](https://user-images.githubusercontent.com/100519215/185402686-31484ee5-63ae-4eaf-8b4b-64d046248c29.png)
+## components
+<p>This directory consists all react UI components.</p>
+
+![image](https://user-images.githubusercontent.com/100519215/185402686-31484ee5-63ae-4eaf-8b4b-64d046248c29.png)
 
   
-  ## providers
-  <p>This directory contains all context API providers for react app.</p>
-  
-  ![image](https://user-images.githubusercontent.com/100519215/185402784-60096885-675c-4165-8a4f-842d0b4c1fd8.png)
+## providers
+<p>This directory contains all context API providers for react app.</p>
+
+![image](https://user-images.githubusercontent.com/100519215/185402784-60096885-675c-4165-8a4f-842d0b4c1fd8.png)
 
   
   ## - reducers
