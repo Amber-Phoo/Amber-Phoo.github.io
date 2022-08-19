@@ -54,6 +54,8 @@ categories: video demo
 ##  _mock
 <p>This directory contains mock data structure of App Model to make app work before actual data is passing down from api.</p>
 
+![image](https://user-images.githubusercontent.com/100519215/185549826-73d3ee36-d5f0-40ab-b0f1-cf6832e1ca94.png)
+
 
 <p>&nbsp;</p>
 
