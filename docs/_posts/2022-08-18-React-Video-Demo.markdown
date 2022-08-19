@@ -35,23 +35,23 @@ categories: video demo
 
 ![image](https://user-images.githubusercontent.com/100519215/185402840-c479dc7f-c99a-4614-992f-0d5b175e1872.png)
 
-## - routers
+## routers
 <p>This directory contains client site routing configuration file.</p>
 
 ![image](https://user-images.githubusercontent.com/100519215/185403033-bb5bd00c-ef10-4cfa-8e5a-60c13dedb2ea.png)
 
-## - styles
+## styles
 <p>This directory has all styles components such as 'css' and 'sass'.</p>
 
  ![image](https://user-images.githubusercontent.com/100519215/185402932-5077813c-f392-4abb-8666-16dc80dd5cd9.png)
 
-## - utils
+## utils
  <p>This directory contains utility function such as store and retrieve session. Last but not least AppSetting to easily configure api endpoint.</p>
 
 ![image](https://user-images.githubusercontent.com/100519215/185403637-f6022141-b703-4c6d-a547-814707c6d244.png)
 
 
-# - _mock
+##  _mock
 <p>This directory contains mock data structure of App Model to make app work before actual data is passing down from api.</p>
 
 
@@ -63,12 +63,12 @@ categories: video demo
 <h2>Code Overview</h2>
 
 
-## - Index.js
+## Index.js
 <p>This file is main entry point of React app and which has child component called AppRouter.js</p>
 
 ![image](https://user-images.githubusercontent.com/100519215/185407241-072af988-529f-4be7-904d-da8f550ee22a.png)
 
-## - AppRouter.js
+## AppRouter.js
 <p>The route of the application is configure in this file.</p>
 
 ![image](https://user-images.githubusercontent.com/100519215/185408254-bc260fe8-46b3-4b00-95f4-603488f40ce2.png)
@@ -77,12 +77,12 @@ categories: video demo
 
 ![image](https://user-images.githubusercontent.com/100519215/185408355-be5416cd-68e0-440d-b606-33dce928654d.png)
 
-## - eventReducer.js  
+## eventReducer.js  
 <p>Each UI component has their own state. Those states are declare in the respective reducer file. eventReducer is one of them which is used to manage states of event component.</p>
 
 ![image](https://user-images.githubusercontent.com/100519215/185410590-46ffc357-79cd-47b6-87bf-49dfb1f91c31.png)
 
-## - EventHome.js (Parent Component)
+## EventHome.js (Parent Component)
 <p>1. EventHome is UI component for event. States of this UI component are initialized using userReducer hook.</p>
 
 ![image](https://user-images.githubusercontent.com/100519215/185412197-7c6c346f-d23d-47e0-9a19-13e92a7bb1d4.png)
@@ -96,7 +96,7 @@ categories: video demo
 
 ![image](https://user-images.githubusercontent.com/100519215/185413034-ea30df89-71a7-480d-aeec-79e9817578df.png)
 
-## - MyCalendar.js (Child Component)
+## MyCalendar.js (Child Component)
 <p>1. Child component retrieve parent's state by using <b>useContext</b> hook.</p> 
 
 ![image](https://user-images.githubusercontent.com/100519215/185418359-2893085b-1f84-4762-8100-e4e2a662e867.png)
