@@ -41,7 +41,7 @@ categories: video demo
 ![image](https://user-images.githubusercontent.com/100519215/185403033-bb5bd00c-ef10-4cfa-8e5a-60c13dedb2ea.png)
 
 ## styles
-<p>This directory has all styles components such as 'css' and 'sass'.</p>
+<p>This directory has all styles components such as 'css' , 'scss' and 'css in js'.</p>
 
  ![image](https://user-images.githubusercontent.com/100519215/185402932-5077813c-f392-4abb-8666-16dc80dd5cd9.png)
 
