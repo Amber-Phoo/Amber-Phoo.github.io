@@ -90,7 +90,7 @@ categories: video demo
   
   ![image](https://user-images.githubusercontent.com/100519215/185412197-7c6c346f-d23d-47e0-9a19-13e92a7bb1d4.png)
   
-  <p>2. <b>useEffect<b> hook will be triggered before component mounted and after component dismounted.<p>
+  <p>2. <b>useEffect</b> hook will be triggered before component mounted and after component dismounted.</p>
   <p>That is the reason we put restful api call in this method.</p>
     
   ![image](https://user-images.githubusercontent.com/100519215/185413535-7d86b1ae-e664-4fdf-8a5c-2d098eb11c0a.png)
